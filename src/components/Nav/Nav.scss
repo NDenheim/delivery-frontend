@@ -1,0 +1,57 @@
+@use "../../variables" as *;
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+
+  &__account--buttons {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: $color-grey;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey;
+    height: 15vh;
+
+    &--logo {
+      width: 6vw;
+      background-color: $color-grey;
+    }
+
+    &--text {
+      font-size: 4vw;
+      font-weight: 800;
+      color: $color-white;
+      background-color: $color-grey;
+    }
+  }
+
+  &__menu--buttons {
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-top: 0;
+
+    li {
+      background-color: transparent;
+    }
+  }
+}
