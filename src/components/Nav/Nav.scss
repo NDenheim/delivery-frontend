@@ -1,8 +1,6 @@
 @use "../../variables" as *;
 
 .nav {
-  position: absolute;
-  top: 0;
   width: 100vw;
 
   &__account--buttons {

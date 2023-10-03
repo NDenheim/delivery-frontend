@@ -1,9 +1,12 @@
 import "./Nav.scss";
-import Logo from "../../assets/bq-logo.png";
+import Logo from "../../assets/burger-queen.png";
+import { MouseEventHandler } from "react";
 
-type NavProps = {};
+type NavProps = {
+  handleClick: MouseEventHandler<HTMLButtonElement>;
+};
 
-const Nav = () => {
+const Nav = ({ handleClick }: NavProps) => {
   return (
     <nav className="nav">
       <div className="nav__heading">
@@ -24,9 +27,9 @@ const Nav = () => {
       </div>
       <div className="nav__menu">
         <ul className="nav__menu--buttons">
-          <li>BURGERS</li>
-          <li>SIDES</li>
-          <li>DRINKS</li>
+          <button onClick={handleClick}>BURGERS</button>
+          <button onClick={handleClick}>SIDES</button>
+          <button onClick={handleClick}>DRINKS</button>
         </ul>
       </div>
     </nav>

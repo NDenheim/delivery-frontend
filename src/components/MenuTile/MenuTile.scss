@@ -1,0 +1,9 @@
+.tile {
+  width: 25rem;
+
+  &__image {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

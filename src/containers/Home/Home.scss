@@ -1,0 +1,10 @@
+.home {
+  margin: 2vw;
+  max-width: 100vw;
+
+  &__tiles {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
